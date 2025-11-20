@@ -9,6 +9,7 @@ on:
 jobs:
   build-test-distribute:
     runs-on: ubuntu-latest
+    environment: 'Firebase-App-Distribution-Configuration'
     env:
       FIREBASE_DISTRIBUTION_ENABLED: "true"
       GOOGLE_SERVICES_JSON_BASE64: ${{ secrets.GOOGLE_SERVICES_JSON_BASE64 }}
