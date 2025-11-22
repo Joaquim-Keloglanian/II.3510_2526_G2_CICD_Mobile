@@ -139,6 +139,6 @@ jobs:
 
 ### 🎉 You’re Done!
 
-Once you have filled in all the `TODO` sections in the `.yml` file, commit your changes and push to the `main` branch. This will trigger your first CI/CD pipeline run!
+Once you have filled in all the `TODO` sections in the `.yml` file, commit your changes and push to the `exercise` branch. This will trigger your first CI/CD pipeline run!
 
 If you need help, ask your CI/CD group or check the official documentation.

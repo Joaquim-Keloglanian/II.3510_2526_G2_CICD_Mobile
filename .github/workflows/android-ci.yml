@@ -10,9 +10,9 @@ name: Android CI & Firebase Distribution
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "exercise" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "exercise" ]
 
 jobs:
   build-test-distribute:
@@ -70,8 +70,8 @@ jobs:
       # TODO: Step 7 - Install the Firebase CLI
       # You need the Firebase Command-Line Tool to distribute the app.
       # Add a `run` step to install it using: curl -sL https://firebase.tools | bash
-      # IMPORTANT: This step should only run on pushes to the 'main' branch.
-      # Use an `if` condition for this: `if: github.event_name == 'push' && github.ref == 'refs/heads/main'`
+      # IMPORTANT: This step should only run on pushes to the 'exercise' branch.
+      # Use an `if` condition for this: `if: github.event_name == 'push' && github.ref == 'refs/heads/exercise'`
 
 
       # TODO: Step 8 - Distribute to Firebase App Distribution
@@ -79,6 +79,6 @@ jobs:
       # Add a `run` step with the `firebase appdistribution:distribute` command.
       # You will need to provide the app path, app ID, testers list, release notes, and token
       # by referencing the environment variables you created in Step 2.
-      # IMPORTANT: This step should also only run on pushes to 'main'. Use the same `if` condition.
+      # IMPORTANT: This step should also only run on pushes to 'exercise'. Use the same `if` condition.
       # Example: firebase appdistribution:distribute <path_to_apk> --app "${{ env.FIREBASE_APP_ID_ANDROID }}" ...
 
